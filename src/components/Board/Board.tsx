@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./styles.css";
-import { Card } from "./Card.tsx";
+import "./Board.css";
+import { Card } from "../Card/Card.tsx";
 
 
 
@@ -45,7 +45,6 @@ export default function App() {
       setIsDragging(false);
       return;
     }
-
 
 
     if (e.buttons !== 1) {
@@ -112,9 +111,8 @@ export default function App() {
           }}
         >
          <Card  onMouseUp={ClickCardUp} onMouseDown={ClickCardDown} />
+       
          <Card  onMouseUp={ClickCardUp} onMouseDown={ClickCardDown} />
-         <Card  onMouseUp={ClickCardUp} onMouseDown={ClickCardDown} />
-          
            
            
         </div>
